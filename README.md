@@ -2,7 +2,7 @@
 
 > A JEE-level AI math tutor powered by Google Gemini with RAG, 5 Agents, Human-in-the-Loop, and Memory.
 
-![Architecture](architecture.mmd)
+![Architecture Diagram](architecture.png)
 
 ## Live Demo
 🔗 **[https://your-app.streamlit.app](https://your-app.streamlit.app)** *(replace after deployment)*
@@ -65,7 +65,7 @@ cd math-mentor
 ```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+cl
 ```
 
 ### 3. Set API key
@@ -92,9 +92,10 @@ Without this, the app uses keyword search (still works, but less accurate).
 ```
 math-mentor/
 ├── app.py                  # Streamlit UI (all UI code)
-├── agents.py               # All 5 agents + pipeline orchestrator
-├── rag.py                  # RAG: chunk → embed → FAISS → retrieve
-├── memory.py               # Memory layer (SQLite)
+├── orchestration/          # LangGraph orchestration (workflow.py)
+├── agents/                 # All 5 agents package (client, parser, solver, etc.)
+├── rag/                    # RAG package (chunking, embedding, index_build, retrieve)
+├── memory/                 # Memory layer package (SQLite, retrieval, save)
 ├── knowledge_base/         # 12 curated math knowledge docs
 │   ├── algebra_quadratic.txt
 │   ├── algebra_sequences.txt
