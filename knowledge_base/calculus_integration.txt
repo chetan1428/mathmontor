@@ -1,0 +1,41 @@
+TOPIC: Integration (Basic Calculus)
+
+BASIC INTEGRALS:
+- ∫ xⁿ dx = xⁿ⁺¹/(n+1) + C  (n ≠ -1)
+- ∫ 1/x dx = ln|x| + C
+- ∫ eˣ dx = eˣ + C
+- ∫ aˣ dx = aˣ/ln(a) + C
+- ∫ sin x dx = -cos x + C
+- ∫ cos x dx = sin x + C
+- ∫ sec²x dx = tan x + C
+- ∫ csc²x dx = -cot x + C
+- ∫ sec x tan x dx = sec x + C
+
+SUBSTITUTION (u-sub):
+When integrand has f(g(x))g'(x) form:
+Let u = g(x), du = g'(x)dx
+Rewrite in terms of u, integrate, substitute back
+
+INTEGRATION BY PARTS:
+∫ u dv = uv - ∫ v du
+LIATE rule for choosing u: Logarithmic, Inverse trig, Algebraic, Trig, Exponential
+
+DEFINITE INTEGRALS:
+∫[a to b] f(x)dx = F(b) - F(a) where F'(x) = f(x)
+
+PROPERTIES:
+- ∫[a to b] f(x)dx = -∫[b to a] f(x)dx
+- ∫[a to a] f(x)dx = 0
+- ∫[a to b] [f+g]dx = ∫f dx + ∫g dx
+- If f is even: ∫[-a to a] f(x)dx = 2∫[0 to a] f(x)dx
+- If f is odd: ∫[-a to a] f(x)dx = 0
+
+AREA BETWEEN CURVES:
+Area = ∫[a to b] |f(x) - g(x)| dx
+Find intersection points first → they are limits a, b
+
+COMMON MISTAKES:
+- Forgetting + C for indefinite integrals
+- Wrong sign for ∫ sin x dx (it's -cos x not cos x)
+- Not changing limits when doing u-substitution in definite integrals
+- Forgetting absolute value in ln|x|

@@ -1,0 +1,49 @@
+TOPIC: Differentiation Rules
+
+BASIC DERIVATIVES:
+- d/dx [xⁿ] = nxⁿ⁻¹
+- d/dx [eˣ] = eˣ
+- d/dx [aˣ] = aˣ ln(a)
+- d/dx [ln x] = 1/x
+- d/dx [sin x] = cos x
+- d/dx [cos x] = -sin x
+- d/dx [tan x] = sec²x
+- d/dx [cot x] = -csc²x
+- d/dx [sec x] = sec x tan x
+- d/dx [csc x] = -csc x cot x
+
+INVERSE TRIG:
+- d/dx [sin⁻¹x] = 1/√(1-x²)
+- d/dx [cos⁻¹x] = -1/√(1-x²)
+- d/dx [tan⁻¹x] = 1/(1+x²)
+
+CHAIN RULE:
+d/dx [f(g(x))] = f'(g(x)) × g'(x)
+Example: d/dx [sin(x²)] = cos(x²) × 2x
+
+PRODUCT RULE:
+d/dx [f × g] = f'g + fg'
+Example: d/dx [x² sin x] = 2x sin x + x² cos x
+
+QUOTIENT RULE:
+d/dx [f/g] = (f'g - fg') / g²
+Mnemonic: "lo d-hi minus hi d-lo over lo-lo"
+
+IMPLICIT DIFFERENTIATION:
+Differentiate both sides w.r.t. x, treat y as function of x.
+dy/dx appears wherever you differentiate y.
+
+LOGARITHMIC DIFFERENTIATION:
+For y = f(x)^g(x): take ln both sides, differentiate.
+ln y = g(x) ln f(x) → (1/y)(dy/dx) = ...
+
+COMMON MISTAKES:
+- Forgetting chain rule inside trig/exp/log
+- Product rule: differentiating only one factor
+- Sign error in quotient rule (f'g - fg' not fg' - f'g)
+
+SOLUTION TEMPLATE:
+1. Identify which rules apply (product/chain/quotient)
+2. Apply outer function derivative first
+3. Multiply by inner derivative (chain rule)
+4. Simplify

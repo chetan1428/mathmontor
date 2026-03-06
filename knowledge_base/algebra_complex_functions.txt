@@ -1,0 +1,48 @@
+TOPIC: Complex Numbers & Functions
+
+COMPLEX NUMBERS:
+- Form: z = a + bi where i = √(-1), i² = -1
+- Real part: Re(z) = a, Imaginary part: Im(z) = b
+- Modulus: |z| = √(a² + b²)
+- Conjugate: z̄ = a - bi
+- zz̄ = a² + b² = |z|²
+
+OPERATIONS:
+- Addition: (a+bi) + (c+di) = (a+c) + (b+d)i
+- Multiplication: (a+bi)(c+di) = (ac-bd) + (ad+bc)i
+- Division: multiply numerator and denominator by conjugate of denominator
+
+POLAR FORM:
+z = r(cos θ + i sin θ) = re^(iθ)
+where r = |z|, θ = arg(z) = tan⁻¹(b/a)
+
+DE MOIVRE'S THEOREM:
+(cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ)
+Useful for finding nth roots: z^(1/n) has n values
+
+FUNCTIONS - KEY CONCEPTS:
+Domain: set of valid inputs
+Range: set of possible outputs
+Injective (one-to-one): f(a)=f(b) implies a=b
+Surjective (onto): every element of range is hit
+Bijective: both injective and surjective → invertible
+
+COMPOSITE FUNCTIONS:
+(f∘g)(x) = f(g(x))
+Domain of f∘g = {x in domain of g : g(x) in domain of f}
+
+INVERSE FUNCTIONS:
+f⁻¹ exists iff f is bijective
+(f∘f⁻¹)(x) = x and (f⁻¹∘f)(x) = x
+To find: swap x and y, solve for y
+
+EVEN AND ODD FUNCTIONS:
+Even: f(-x) = f(x) — symmetric about y-axis
+Odd: f(-x) = -f(x) — symmetric about origin
+Examples: cos x is even, sin x is odd, x² is even, x³ is odd
+
+COMMON MISTAKES:
+- i² = -1 not +1
+- arg(z) depends on quadrant — use atan2, not just arctan
+- (f∘g)(x) means f applied AFTER g, not f times g
+- Inverse: f⁻¹(x) ≠ 1/f(x)

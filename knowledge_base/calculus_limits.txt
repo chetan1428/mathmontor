@@ -1,0 +1,43 @@
+TOPIC: Limits & Continuity
+
+STANDARD LIMITS (memorize these):
+- lim(x→0) sin(x)/x = 1
+- lim(x→0) tan(x)/x = 1
+- lim(x→0) (1 - cos x)/x² = 1/2
+- lim(x→0) (eˣ - 1)/x = 1
+- lim(x→0) (aˣ - 1)/x = ln(a)
+- lim(x→0) ln(1+x)/x = 1
+- lim(x→∞) (1 + 1/x)ˣ = e
+- lim(x→∞) (1 + a/x)ˣ = eᵃ
+
+L'HOPITAL'S RULE:
+If lim gives 0/0 or ∞/∞ form:
+lim f(x)/g(x) = lim f'(x)/g'(x)
+Apply repeatedly if still indeterminate.
+
+INDETERMINATE FORMS & CONVERSIONS:
+- 0/0, ∞/∞ → L'Hopital
+- 0 × ∞ → rewrite as 0/(1/∞) or ∞/(1/0)
+- 1^∞ → take log: lim = e^(lim exponent × log base)
+- 0⁰, ∞⁰ → same log trick
+
+SQUEEZE THEOREM:
+If g(x) ≤ f(x) ≤ h(x) and lim g = lim h = L, then lim f = L
+
+CONTINUITY:
+f is continuous at x=a if:
+1. f(a) is defined
+2. lim(x→a) f(x) exists
+3. lim(x→a) f(x) = f(a)
+
+COMMON MISTAKES:
+- Not checking if L'Hopital applies (must be 0/0 or ∞/∞)
+- Forgetting to differentiate numerator AND denominator (not quotient rule!)
+- Missing the e^log trick for 1^∞ forms
+
+SOLUTION TEMPLATE:
+1. Direct substitution first
+2. Identify indeterminate form
+3. Algebraic simplification (factor, rationalize, trig identities)
+4. Apply L'Hopital if still indeterminate
+5. Verify result makes sense

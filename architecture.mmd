@@ -1,0 +1,42 @@
+```mermaid
+graph TD
+    A["👤 User Input"] -->|Text / Image / Audio| B["🖼️ Multimodal Parser\nGPT-4o Vision + Whisper"]
+    B -->|Extracted text| C["📝 Editable Preview\nUser can correct"]
+    C --> D
+
+    D["🤖 Agent 1: Parser\nCleans OCR/ASR output\nOutputs structured JSON"]
+    D -->|needs_clarification=true| E["🧑‍💼 HITL: Clarification\nUser fills in missing info"]
+    E --> F
+    D -->|needs_clarification=false| F
+
+    F["🧠 Memory Layer\nFind similar past problems\nSQLite keyword search"]
+    F --> G["🔀 Agent 2: Intent Router\nClassifies: algebra/calculus/\nprobability/linear_algebra\nChooses route: symbolic/numeric/conceptual"]
+
+    G --> H["📚 RAG Retrieval\nFAISS vector search\nTop-k knowledge chunks"]
+    H --> I["⚡ Agent 3: Solver\nSymPy symbolic math +\nGPT-4o with RAG context"]
+
+    I --> J["✅ Agent 4: Verifier\nRe-checks answer\nDomain + edge case checks\nConfidence score 0-100"]
+    J -->|confidence < 70| K["🧑‍💼 HITL: Low Confidence\nHuman approves/edits/rejects"]
+    K --> L
+    J -->|confidence ≥ 70| L
+
+    L["📖 Agent 5: Explainer\nStep-by-step student explanation\nKey formulas + common mistakes"]
+
+    L --> M["🖥️ Streamlit UI Output\n• Final answer\n• Confidence bar\n• Agent trace\n• RAG sources\n• Explanation\n• Feedback buttons"]
+
+    M -->|User feedback| N["💾 Memory Save\nProblem + Answer +\nFeedback + RAG sources"]
+    N --> F
+
+    style A fill:#1a56a0,color:#fff
+    style D fill:#6a1e55,color:#fff
+    style G fill:#37474f,color:#fff
+    style I fill:#2e7d32,color:#fff
+    style J fill:#c0392b,color:#fff
+    style L fill:#00838f,color:#fff
+    style F fill:#f57c00,color:#fff
+    style H fill:#5c6bc0,color:#fff
+    style K fill:#ff6f00,color:#fff
+    style E fill:#ff6f00,color:#fff
+    style M fill:#263238,color:#fff
+    style N fill:#4caf50,color:#fff
+```

@@ -1,0 +1,40 @@
+TOPIC: Quadratic Equations & Polynomials
+
+QUADRATIC FORMULA:
+For ax² + bx + c = 0:
+x = (-b ± √(b² - 4ac)) / (2a)
+
+DISCRIMINANT (D = b² - 4ac):
+- D > 0: Two distinct real roots
+- D = 0: One repeated real root (x = -b/2a)
+- D < 0: Two complex conjugate roots (no real solution)
+
+COMPLETING THE SQUARE:
+ax² + bx + c = a(x + b/2a)² - (b²-4ac)/4a
+
+VIETA'S FORMULAS (for roots α, β):
+- α + β = -b/a
+- α × β = c/a
+
+FACTORING TIPS:
+- Look for common factor first
+- Sum of roots × product of roots approach
+- For x² + bx + c: find two numbers that multiply to c and add to b
+
+COMMON MISTAKES:
+- Forgetting ± in quadratic formula
+- Sign errors when b is negative
+- Dividing by 2a not just 2
+
+SOLUTION TEMPLATE:
+1. Write in standard form ax² + bx + c = 0
+2. Identify a, b, c
+3. Compute D = b² - 4ac
+4. Apply formula or factor
+5. Verify by substituting roots back
+
+EXAMPLE: Solve 2x² - 5x + 3 = 0
+a=2, b=-5, c=3
+D = 25 - 24 = 1
+x = (5 ± 1) / 4
+x = 1.5 or x = 1

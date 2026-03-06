@@ -1,0 +1,59 @@
+TOPIC: Solution Templates by Problem Type
+
+ALGEBRA - EQUATION SOLVING TEMPLATE:
+1. Simplify both sides (expand brackets, combine like terms)
+2. Move all variable terms to one side
+3. Move constants to the other side
+4. Factor or apply formula
+5. State all solutions
+6. Verify by substituting back
+
+ALGEBRA - INEQUALITIES TEMPLATE:
+1. Solve as equation to find boundary points
+2. Identify intervals created by boundary points
+3. Test a point in each interval
+4. Write solution using interval notation
+5. Note: flip sign when multiplying/dividing by negative
+
+PROBABILITY - TEMPLATE:
+1. Define sample space clearly
+2. Count total outcomes
+3. Count favorable outcomes
+4. Apply P = favorable/total
+5. For complex events: use addition/multiplication rules
+6. Check: probability must be between 0 and 1
+
+CALCULUS - LIMIT TEMPLATE:
+1. Try direct substitution
+2. If 0/0 or ∞/∞: factor, rationalize, or apply L'Hopital
+3. For trig limits: use standard limits or squeeze theorem
+4. For limits at infinity: divide by highest power
+5. State the limit value
+
+CALCULUS - DIFFERENTIATION TEMPLATE:
+1. Identify function type (polynomial, trig, exp, composite)
+2. Apply rules in order: power, product, quotient, chain
+3. Simplify the derivative
+4. For implicit: differentiate both sides, collect dy/dx terms
+
+CALCULUS - OPTIMIZATION TEMPLATE:
+1. Read problem, identify quantity to optimize
+2. Express it as function of one variable (use constraint)
+3. Find derivative and set = 0
+4. Apply second derivative test
+5. Compute optimal value
+6. Interpret in context of problem
+
+LINEAR ALGEBRA - MATRIX EQUATION TEMPLATE:
+1. Set up system in matrix form Ax = b
+2. Compute det(A)
+3. If det ≠ 0: find A⁻¹ and compute x = A⁻¹b
+4. If det = 0: use row reduction to find solutions
+5. Verify by computing Ax
+
+CHECKING ANSWERS:
+- Algebra: substitute back
+- Inequalities: test a point in solution set
+- Derivatives: check at a specific value numerically
+- Probability: ensure all probabilities sum to 1
+- Optimization: check it's max/min using 2nd derivative

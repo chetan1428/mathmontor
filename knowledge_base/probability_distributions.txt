@@ -1,0 +1,37 @@
+TOPIC: Probability Distributions
+
+BINOMIAL DISTRIBUTION B(n, p):
+- P(X = k) = C(n,k) × pᵏ × (1-p)^(n-k)
+- Mean: μ = np
+- Variance: σ² = np(1-p)
+- Use when: fixed n trials, each success/fail, constant p, independent
+
+POISSON DISTRIBUTION:
+- P(X = k) = (λᵏ × e^(-λ)) / k!
+- Mean = Variance = λ
+- Use when: counting rare events in fixed interval
+
+NORMAL DISTRIBUTION N(μ, σ²):
+- Symmetric bell curve around mean μ
+- 68-95-99.7 rule: within 1σ, 2σ, 3σ of mean
+- Standardize: Z = (X - μ) / σ
+- P(a < X < b) → convert to Z-scores
+
+GEOMETRIC DISTRIBUTION:
+- P(first success on trial k) = (1-p)^(k-1) × p
+- Mean: 1/p
+
+HYPERGEOMETRIC:
+- Sampling without replacement from finite population
+- P(X=k) = C(K,k)×C(N-K,n-k) / C(N,n)
+- N=population, K=successes in population, n=sample size
+
+COMMON JEE PATTERNS:
+- "At least one" → use complement: P(≥1) = 1 - P(0)
+- "At most k" → sum P(0) + P(1) + ... + P(k)
+- Binomial with large n, small p → approximate with Poisson (λ=np)
+
+COMMON MISTAKES:
+- Using binomial when sampling without replacement (use hypergeometric)
+- Forgetting to check np and n(1-p) for normal approximation
+- Wrong complement for "at least" problems

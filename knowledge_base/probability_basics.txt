@@ -1,0 +1,44 @@
+TOPIC: Probability Basics
+
+FUNDAMENTAL RULES:
+- P(A) is between 0 and 1
+- P(sample space) = 1
+- P(A') = 1 - P(A)  [complement]
+
+ADDITION RULE:
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+For mutually exclusive: P(A ∪ B) = P(A) + P(B)
+
+MULTIPLICATION RULE:
+P(A ∩ B) = P(A) × P(B|A)
+For independent events: P(A ∩ B) = P(A) × P(B)
+
+CONDITIONAL PROBABILITY:
+P(A|B) = P(A ∩ B) / P(B)
+
+BAYES' THEOREM:
+P(A|B) = P(B|A) × P(A) / P(B)
+Extended: P(Aᵢ|B) = P(B|Aᵢ)P(Aᵢ) / Σ P(B|Aⱼ)P(Aⱼ)
+
+COUNTING:
+- Permutations (order matters): nPr = n!/(n-r)!
+- Combinations (order doesn't matter): nCr = n!/(r!(n-r)!)
+
+SAMPLING:
+- With replacement: P(specific sequence) = (favorable/total)^n
+- Without replacement: multiply changing probabilities
+
+COMMON MISTAKES:
+- Confusing P(A|B) with P(B|A)
+- Using with-replacement formula for without-replacement
+- Not checking if events are independent before using product rule
+
+SOLUTION TEMPLATE:
+1. Define sample space
+2. Identify event of interest
+3. Check independence / mutual exclusivity
+4. Apply correct rule
+5. Simplify fraction
+
+EXAMPLE: P(both red) from 3R, 5B without replacement
+P = (3/8) × (2/7) = 6/56 = 3/28

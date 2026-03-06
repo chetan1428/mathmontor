@@ -1,0 +1,49 @@
+TOPIC: Common Mistakes & Pitfalls in JEE Math
+
+ALGEBRA MISTAKES:
+- (a+b)² = a² + 2ab + b²  NOT a² + b²
+- √(a² + b²) ≠ a + b
+- log(a+b) ≠ log(a) + log(b)  [log(ab) = log a + log b]
+- Division by zero: always check denominator ≠ 0
+- Squaring both sides can introduce extraneous solutions → always verify
+
+LOG RULES (correctly stated):
+- log(ab) = log a + log b
+- log(a/b) = log a - log b
+- log(aⁿ) = n log a
+- log_b(a) = ln(a)/ln(b)
+
+SIGN ERRORS:
+- When multiplying/dividing inequality by negative → flip sign
+- √x² = |x| not x
+- (-x)² = x² (always positive)
+
+CALCULUS MISTAKES:
+- ∫ 1/x dx = ln|x| + C  (not ln(x), need absolute value)
+- d/dx[ln f(x)] = f'(x)/f(x)  (chain rule!)
+- Definite integral: always compute F(b) - F(a) in correct order
+- When applying L'Hopital, confirm 0/0 or ∞/∞ form first
+
+PROBABILITY MISTAKES:
+- P(A and B) uses AND multiplication, P(A or B) uses OR addition
+- "At least one" → use complement 1 - P(none)
+- Independent ≠ Mutually exclusive (they are nearly opposite concepts)
+- Conditional probability: P(A|B) ≠ P(B|A)
+
+DOMAIN RESTRICTIONS:
+- √x requires x ≥ 0
+- ln(x) requires x > 0
+- tan(x), sec(x) undefined at x = π/2 + nπ
+- 1/f(x) requires f(x) ≠ 0
+
+WORD PROBLEM TRAPS:
+- "Two less than three times a number" → 3x - 2 not 2 - 3x
+- "How many more" → subtraction
+- Percentage: 20% of x = 0.20x not 20x
+- Units: always track and convert units consistently
+
+VERIFICATION STRATEGIES:
+- Substitute answer back into original equation
+- Check boundary cases (x=0, x=1, n=1)
+- Check if answer is in valid domain
+- Dimensional analysis for physics-style problems

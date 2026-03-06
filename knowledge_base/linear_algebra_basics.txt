@@ -1,0 +1,53 @@
+TOPIC: Linear Algebra Basics
+
+MATRIX OPERATIONS:
+- Addition: element-wise, same dimensions required
+- Scalar multiplication: multiply every element
+- Matrix multiply AB: A is m×n, B is n×p → result is m×p
+  (i,j) entry = dot product of row i of A with column j of B
+- AB ≠ BA in general
+
+DETERMINANT (2×2):
+|a b|
+|c d|  = ad - bc
+
+DETERMINANT (3×3) — cofactor expansion along row 1:
+|a b c|
+|d e f| = a(ei-fh) - b(di-fg) + c(dh-eg)
+|g h i|
+
+PROPERTIES OF DETERMINANTS:
+- det(AB) = det(A) × det(B)
+- det(Aᵀ) = det(A)
+- det(A⁻¹) = 1/det(A)
+- If any row/col is all zeros → det = 0
+- Swapping rows changes sign of det
+
+INVERSE MATRIX (2×2):
+A⁻¹ = (1/det(A)) × |d  -b|
+                      |-c  a|
+Exists only if det(A) ≠ 0
+
+SYSTEM OF EQUATIONS Ax = b:
+- Unique solution if det(A) ≠ 0: x = A⁻¹b
+- No solution or infinite solutions if det(A) = 0
+
+EIGENVALUES:
+det(A - λI) = 0 → characteristic equation → solve for λ
+For each λ, find eigenvector: (A - λI)v = 0
+
+RANK:
+- Number of linearly independent rows/columns
+- rank(A) + nullity(A) = number of columns
+
+COMMON MISTAKES:
+- Multiplying matrices in wrong order (not commutative)
+- Computing 3×3 determinant with sign errors (alternating + - +)
+- Confusing inverse with transpose
+- Forgetting to check det≠0 before computing inverse
+
+SOLUTION TEMPLATE:
+1. Identify operation needed
+2. Check dimension compatibility
+3. Apply formula step by step
+4. Verify: A × A⁻¹ = I

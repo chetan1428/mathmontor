@@ -1,0 +1,49 @@
+TOPIC: Optimization & Applications of Derivatives
+
+FINDING EXTREMA:
+1. Find f'(x) and set = 0 → critical points
+2. Find f''(x) at each critical point:
+   - f''(x) > 0 → local minimum
+   - f''(x) < 0 → local maximum
+   - f''(x) = 0 → test further (inflection point possible)
+
+ABSOLUTE EXTREMA ON [a,b]:
+- Evaluate f at all critical points AND endpoints
+- Largest value = absolute max, smallest = absolute min
+
+INCREASING/DECREASING:
+- f'(x) > 0 → f is increasing
+- f'(x) < 0 → f is decreasing
+
+CONCAVITY:
+- f''(x) > 0 → concave up (cup shape)
+- f''(x) < 0 → concave down (cap shape)
+- Inflection point: f''(x) = 0 AND concavity changes
+
+OPTIMIZATION WORD PROBLEMS:
+1. Define variable(s)
+2. Write objective function (what to maximize/minimize)
+3. Write constraint equation
+4. Substitute to get single-variable function
+5. Differentiate, set = 0, solve
+6. Check it's max/min using second derivative
+
+ROLLE'S THEOREM:
+If f continuous on [a,b], differentiable on (a,b), f(a)=f(b),
+then ∃ c ∈ (a,b) with f'(c) = 0
+
+MEAN VALUE THEOREM:
+f'(c) = [f(b) - f(a)] / (b - a) for some c ∈ (a,b)
+
+COMMON MISTAKES:
+- Forgetting to check endpoints for absolute extrema
+- Not verifying the second derivative test when f''=0
+- Setting up wrong objective function in word problems
+- Not checking domain constraints in optimization
+
+EXAMPLE: Maximize area of rectangle with perimeter 40
+Let width = x, length = (20-x)
+Area = x(20-x) = 20x - x²
+dA/dx = 20 - 2x = 0 → x = 10
+d²A/dx² = -2 < 0 → maximum
+Max area = 10 × 10 = 100 sq units (square!)
